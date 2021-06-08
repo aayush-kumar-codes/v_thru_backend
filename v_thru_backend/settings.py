@@ -167,8 +167,8 @@ SITE_ID = 1
 
 
 EMAIL_BACKEND = 'django_ses.SESBackend'
-AWS_ACCESS_KEY_ID = 'AKIA6GFB74FOPBO4MBEX'
-AWS_SECRET_ACCESS_KEY = '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'
+AWS_ACCESS_KEY_ID = ''
+AWS_SECRET_ACCESS_KEY = ''
 EMAIL_HOST_USER = 'no-reply@orderhomey.com'
 AWS_SES_REGION_NAME = 'me-south-1'
 AWS_SES_REGION_ENDPOINT = 'email.me-south-1.amazonaws.com'
