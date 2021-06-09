@@ -46,12 +46,14 @@ INSTALLED_APPS = [
     'rest_auth.registration',
     'corsheaders',
     'users.apps.UsersConfig',
+    'django_admin_json_editor',
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
     'allauth.socialaccount.providers.facebook',
     'allauth.socialaccount.providers.google',
     'crispy_forms',
+    'api.apps.ApiConfig',
 ]
 
 MIDDLEWARE = [
@@ -94,7 +96,7 @@ ASGI_APPLICATION = 'v_thru_backend.routing.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'cisodb',
+        'NAME': 'vthru',
         'USER': 'cisoadmin',
         'PASSWORD': 'cisopassword',
         'HOST': 'localhost'
@@ -166,13 +168,7 @@ USE_TZ = True
 SITE_ID = 1
 
 
-EMAIL_BACKEND = 'django_ses.SESBackend'
-AWS_ACCESS_KEY_ID = 'AKIA6GFB74FOPBO4MBEX'
-AWS_SECRET_ACCESS_KEY = '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'
-EMAIL_HOST_USER = 'no-reply@orderhomey.com'
-AWS_SES_REGION_NAME = 'me-south-1'
-AWS_SES_REGION_ENDPOINT = 'email.me-south-1.amazonaws.com'
-DEFAULT_FROM_EMAIL = 'no-reply@orderhomey.com'
+
 
 
 

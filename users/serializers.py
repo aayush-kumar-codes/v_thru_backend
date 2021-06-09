@@ -11,7 +11,7 @@ from allauth.account.utils import setup_user_email
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = CustomUser
-        fields = ['id',"email","name","image","phone_number","verified","receive_updates_on_notifications","receive_updates_on_email","receive_updates_on_sms","receive_offers_on_notifications","receive_offers_on_email","receive_offers_on_sms"]
+        fields = ['id',"email","name","image","phone_number","verified","receive_updates_on_notifications","receive_updates_on_email","receive_updates_on_sms","receive_offers_on_notifications","receive_offers_on_email","receive_offers_on_sms","cart"]
 
 
 

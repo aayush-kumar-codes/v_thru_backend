@@ -31,6 +31,7 @@ schema_view = get_schema_view(
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('api/', include('api.urls')),
     url(r'^rest-auth/', include('rest_auth.urls')),
     path('rest-auth/user/', include('users.urls')),
     url(r'^rest-auth/registration/', include('rest_auth.registration.urls')),

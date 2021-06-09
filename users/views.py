@@ -20,6 +20,7 @@ from django.core.mail import send_mail, BadHeaderError
 from django.conf import settings
 
 
+
 class User(APIView):
     permission_classes = [IsAuthenticated]
 
